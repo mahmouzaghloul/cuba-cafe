@@ -286,15 +286,9 @@
 
     color:red;
     font-size: 13px;
-    opacity: .5;
+    opacity: .8;
     }
-    .section_2_footer a
-    {
-
-    color:goldenrod;
-    opacity: .9;
-
-    }
+  
     .instagram
     {
     color: orange;
@@ -386,4 +380,11 @@
     .new
     {
     color:red
+    }
+    .link_portfol 
+    {
+
+    color:goldenrod;
+   
+
     }
