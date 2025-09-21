@@ -1,390 +1,337 @@
-    body
-    {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #2f4f3f; 
-    overflow-x: hidden;
-    }
-    nav
-    {
-    background-color: black;
-    display: flex;
-    align-items: center;
-    }
-    .navbar-brand
-    {
-    font-family:'serif','san-serif';
-    }
-    .offcanvas
-    {
-    width: 70vw !important;
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+background-color: #2f4f3f; 
+overflow-x: hidden;
+}
+
+.navbar{
+background-color: #2f4f3f;
+}
+/* nav{
+display: flex;
+align-items: center;
+} */
+.navbar-brand{
+font-family:'serif','san-serif';
+}
+
+.offcanvas{
+width: 70vw !important;
+}
+
+.hero{
+background-color: #2f4f3f;
+width: 100vw;
+height: 100vh;
+}
+
+.lista{
+background-color: #2f4f3f; 
+}
+
+.wrapper_img_hero{
+width: 100vw;
+height: 100vh;
+animation: img_hero 4s ;
+transition: all 12s ease-in-out;
+}
+
+.img_hero{
+width: 100vw;
+height: 100vh;
+background-position:center;
+object-fit: cover;
+background-clip:border-box;
+background-repeat: no-repeat;
+}
+/*sections   Boba & Fettuccine & Hot Drinks &  ice coffee  & Smoothie
+   Zabado   & sweets  & Waffle steak
+   croissant  & Wrap meals & Chicken crepe & Seafood crepe
+ Additions & Syrian &
+ */
+.Hot_drinks{
+transition: all 2s ease-in-out;
+padding-inline: 12px;
+width: 100vw;
+display: grid; 
+grid-template-columns: 45% 10% 45%;
+gap: 2px;
+justify-content: space-between;
+justify-content: end;
+box-shadow: inset 50vw 0vw 0vw  #252f2abf,inset -50vw 0vw 0vw  #252f2abf;
+}
+/*sections   Boba & Fettuccine & Hot Drinks &  ice coffee  & Smoothie
+   Zabado   & sweets  & Waffle steak
+   croissant  & Wrap meals & Chicken crepe & Seafood crepe
+ Additions & Syrian &
+ */
+.Hot_drinks:hover{
+box-shadow: none;
+padding:7px 15px;
+transform: scale(.9);
+box-shadow: inset 10px 0px 70px #71a189bf ;
+}
+
+.jus{
+transition: all 2s ease-in-out;
+padding-inline: 12px;
+display: grid; 
+grid-template-columns: 45% 10% 45% ;
+gap: 2px;
+background-color: #252f2abf;
+justify-content: space-between;
+box-shadow: none;
+flex-grow: 1;
+}
+
+.jus:hover{
+padding:7px 15px;
+transform: scale(.9);
+box-shadow: inset 10px 0px 70px #71a189bf ;
+box-shadow: inset 50vw 0vw 0vw  #252f2abf,inset -50vw 0vw 0vw  #252f2abf; 
+box-shadow:  1px 1px 8px   wheat, -1px -1px 8px  wheat; 
+
+}
+
+.text_en_left{
+font-size: 13px;
+color: antiquewhite;
+}
+
+.text_price_center{   
+color: goldenrod;
+display: flex;
+justify-content: center;
+
+}
+
+.text_right{
+justify-self: end; 
+color: antiquewhite;
+font-size: 13px;
+direction: rtl;
+width: 100%; 
+}
+
+.title_hot_drink{
+box-shadow: inset 50vw 0vw 0vw  #252f2abf,inset -50vw 0vw 0vw  #252f2abf;
+height: 60px;
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 2s ease-in-out;
+}
+.title_hot_drink:hover{
+box-shadow: none;
+transform: scale(.9);
+}
 
 
-    }
+.title_hot_drink h1,.title_hot_drink h1{
+font-family:'fontName','fallback';
+animation: mine 1s ease-in-out infinite ;
+color: goldenrod;
+text-shadow: 4px 2px 2px black;
 
-    .hero
-    {
-    background-color: #2f4f3f;
-    width: 100vw;
-    height: 100vh;
-    }
-    .navbar
-    {
-    background-color: #2f4f3f;
-    }
-    .lista
-    {
-    background-color: #2f4f3f; 
-    }
+}
 
-    .slider
-    {
-    width: 100vw;
-    height: 100vh;
-    animation: slide1 4s ;
-    transition: all 12s ease-in-out;
-    }
-    .slide1
-    {
-    width: 100vw;
-    height: 100vh;
-    background-position:center;
-    object-fit: cover;
-    background-clip:border-box;
-    background-repeat: no-repeat;
-    }
+@keyframes mine{
+0%{transform: scale(.9);}
+}
 
-    .Hot_drinks
-    {
-    transition: all 2s ease-in-out;
-    padding-inline: 12px;
-    width: 100vw;
-    display: grid; 
-    grid-template-columns: 45% 10% 45%;
-    gap: 2px;
-    justify-content: space-between;
-    justify-content: end;
-    box-shadow: inset 50vw 0vw 0vw  #252f2abf,inset -50vw 0vw 0vw  #252f2abf;
-    }
-    .Hot_drinks:hover
-    {
-    box-shadow: none;
-    padding:7px 15px;
-    transform: scale(.9);
-    box-shadow: inset 10px 0px 70px #71a189bf ;
-    }
-    .jus 
-    {
-    transition: all 2s ease-in-out;
-    padding-inline: 12px;
-    display: grid; 
-    grid-template-columns: 45% 10% 45%;
-    gap: 2px;
-    background-color: #252f2abf;
-    justify-content: space-between;
-    box-shadow: none;
-    }
-    .jus:hover
-    {
-    padding:7px 15px;
-    transform: scale(.9);
-    box-shadow: inset 10px 0px 70px #71a189bf ;
-    box-shadow: inset 50vw 0vw 0vw  #252f2abf,inset -50vw 0vw 0vw  #252f2abf; 
-    box-shadow:  1px 1px 8px   wheat, -1px -1px 8px  wheat; 
-
-    }
-    .text_en_left
-    {
-    font-size: 13px;
-    color: antiquewhite;
-    }
-    .text_price_center
-    {   
-    color: goldenrod;
-    display: flex;
-    justify-content: center;
-
-    }
-
-    .text_en_r
-    {
-    justify-self: end; 
-    color: antiquewhite;
-    font-size: 13px;
-    direction: rtl;
-    }
-
-    .title_hot_drink
-    {
-    box-shadow: inset 50vw 0vw 0vw  #252f2abf,inset -50vw 0vw 0vw  #252f2abf;
-    height: 60px;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 2s ease-in-out;
-    }
-    .title_hot_drink:hover
-
-    {
-    box-shadow: none;
-    transform: scale(.9);
-    }
+@keyframes img_hero{
+1%{transform: translatey(-100%);}
+} 
 
 
-    .title_hot_drink h1,.title_hot_drink h1
-    {
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
 
+.navbar{
+padding-inline: 30px;
+}
+.Hot_drinks{
+padding-inline: 30px;
+}
+.text_en_left,.text_price_center,.text_right{
+font-size: 17px;
+font-weight: 300;
+}
 
-    font-family:'fontName','fallback';
-    animation: mine 1s ease-in-out infinite ;
-    color: goldenrod;
-    text-shadow: 4px 2px 2px black;
+}
 
-    }
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px){
 
-    @keyframes mine
-    {
+.navbar{
+padding-inline: 60px;
+}
 
-    0%
-    {
-    transform: scale(.9); 
-    }
-    10%
-    {
+.Hot_drinks{
+padding-inline: 60px;
+}
 
-    }
-    20%
-    {
+.text_en_left,.text_price_center,.text_right{
+font-size: 20px;
+font-weight: 300;
+}
 
-    }
+} 
 
-    }
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){ 
 
-    @keyframes slide1
-    {
-    1%
-    {
-    transform: translatey(-100%);
+.navbar{
+padding-inline: 80px;
+}
 
-    }
-    } 
+.Hot_drinks,.jus{
+padding-inline: 80px;
 
+}
 
-    /*Small devices (landscape phones, 576px and up)*/
-    @media (min-width: 576px) 
-    { 
-    .navbar
-    {
-    padding-inline: 30px;
-    }
-    .Hot_drinks
-    {
-    padding-inline: 30px;
-    }
-    .text_en_left,.text_price_center,.text_en_r
-    {
-    font-size: 17px;
-    font-weight: 300;
-    }
+}
 
-    }
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px){ 
 
-    /*Medium devices (tablets, 768px and up)*/
-    @media (min-width: 768px) 
-    {
-    .navbar
-    {
-    padding-inline: 60px;
-    }
-    .Hot_drinks
-    {
-    padding-inline: 60px;
-    }
-    .text_en_left,.text_price_center,.text_en_r
-    {
-    font-size: 20px;
-    font-weight: 300;
-    }
-    } 
+.navbar{
+padding-inline: 100px;
+}
 
-    /* Large devices (desktops, 992px and up)*/
-    @media (min-width: 992px)
-    { 
-    .navbar
-    {
-    padding-inline: 80px;
-    }
-    .Hot_drinks,.jus
-    {
-    padding-inline: 80px;
+.Hot_drinks,.jus{
+padding-inline: 100px;
+}
 
-    }
+}
 
-    }
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px){
 
-    /* X-Large devices (large desktops, 1200px and up)*/
-    @media (min-width: 1200px)
-    { 
-    .navbar
-    {
-    padding-inline: 100px;
-    }
-    .Hot_drinks,.jus
-    {
-    padding-inline: 100px;
-    }
-    }
+.navbar{
+padding-inline: 130px;
+}
 
-    /* XX-Large devices (larger desktops, 1400px and up)*/
-    @media (min-width: 1400px)
-    {
-    .navbar
-    {
-    padding-inline: 130px;
-    }
-    .Hot_drinks,.jus
-    {
-    padding-inline: 130px;
-    }
-    }
-    .bold
-    {
+.Hot_drinks,.jus{
+padding-inline: 130px;
+}
+
+}
+
+.bold{
     font-size:17px ;
+}
 
-    }
-    .opcity
-    {
-    opacity: .5;
-    font-size: 9px;
-    }
-    .Cocktails
-    {
-    row-gap:25px ;
-    padding-bottom: 20px;
-    }
-    footer
-    {
-    background-color: #000000a6;
-    padding-block: 10px;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    }
+.opcity{
+opacity: .5;
+font-size: 9px;
+}
 
-    .section_1_footer
-    {
-    display: flex;
-    gap: 9px;
-    margin-bottom: 7px;
+.Cocktails{
+row-gap:25px ;
+padding-bottom: 20px;
+}
 
-    }
-    .section_2_footer
-    {
+footer{
+background-color: #000000a6;
+padding-block: 10px;
+height: 70px;
+display: flex;
+flex-direction: column;
+align-items: center; 
+}
 
-    color:red;
-    font-size: 13px;
-    opacity: .8;
-    }
-  
-    .instagram
-    {
-    color: orange;
-    }
-    .telephone
-    {
-    color: #25D366;
-    }
-    .facebook
-    {
-    color: #1877F2;
-    }
-    .whatsapp
-    {
-    color: #25D366;
-    }
-    .tiktok
-    {
-    transition: all 7s ease-in-out;
-    animation: t 5s ease-in-out 1;
-    }
-    .instagram,.tiktok,.whatsapp
-    ,.telephone ,.facebook
-    {
-    transition: all .5s ease-in-out;
-    }
-    .instagram:hover , .tiktok:hover ,.whatsapp:hover
-    ,.telephone:hover , .facebook:hover
-    {
-    opacity:.5 ;
-    }
+.section_1_footer{
+display: flex;
+gap: 9px;
+margin-bottom: 7px;
 
+}
 
+.section_2_footer{
+color:red;
+font-size: 13px;
+opacity: .8;
+}
 
-    .child_1,.child_2,.child_3
-    {
-    color: wheat;
-    } 
+.instagram{
+color: orange;
+}
 
+.telephone{
+color: #25D366;
+}
 
-    .piece14
-    {
-    color:#c6a040db;
-    font-size:13px;
-    margin-block: 20px;
-    background-color: #2f4f3f;
-    padding: 10px;
-    border-radius:15px;
-    border: 1px solid white;
-    transition:  all 1s ease-in-out;
-    }
+.facebook{
+color: #1877F2;
+}
 
-    .piece14:hover
-    {
-    transform: scale(1.1);
-    }
+.whatsapp{
+color: #25D366;
+}
 
+.tiktok{
+transition: all 7s ease-in-out;
+animation: t 5s ease-in-out 1;
+}
 
-    /* @keyframes mine
-    animation: mine 1s ease-in-out 9 ;
-    {
+.instagram,.tiktok,.whatsapp
+,.telephone ,.facebook{
+transition: all .5s ease-in-out;
+}
 
-    0%
-    {
-    transform: scale(.9); 
-    }
-    10%
-    {
+.instagram:hover , .tiktok:hover ,.whatsapp:hover
+,.telephone:hover , .facebook:hover{
+opacity:.5 ;
+}
 
-    }
-    20%
-    {
+.child_1,.child_2,.child_3{
+color: wheat;
+} 
 
-    }
+.piece14{
+color:#c6a040db;
+font-size:13px;
+margin-block: 20px;
+background-color: #2f4f3f;
+padding: 10px;
+border-radius:15px;
+border: 1px solid white;
+transition:  all 1s ease-in-out;
+}
 
-    } */
+.piece14:hover{
+transform: scale(1.1);
+}
 
-    .bg
-    {
-    background-color: #2f4f3f;
-    padding: 2px;
-    border-radius: 10px;
-    }
-    .li{
-    line-height: 14px;
-    display: block;
+.bg{
+background-color: #2f4f3f;
+padding: 2px;
+border-radius: 10px;
+}
 
-    }
-    .new
-    {
-    color:red
-    }
-    .link_portfol 
-    {
+.li{
+line-height: 14px;
+display: block;
+}
 
-    color:goldenrod;
-   
+.title_hot_drink h1{
+    position: relative;
+}
 
-    }
+.new{
+position: absolute;
+right: -35px;
+top: 0px;
+width: 40px;
+}
+
+.link_portfol {
+color:goldenrod;
+}
